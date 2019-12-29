@@ -1,0 +1,16 @@
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\HangManGame.exe.config
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\HangManGame.exe
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\HangManGame.pdb
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.csprojAssemblyReference.cache
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\MainWindow.g.cs
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\App.g.cs
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame_MarkupCompile.cache
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame_MarkupCompile.lref
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\MainWindow.baml
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.g.resources
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.Properties.Resources.resources
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.csproj.GenerateResource.cache
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.exe
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.pdb
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\Game.g.cs
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\Game.baml

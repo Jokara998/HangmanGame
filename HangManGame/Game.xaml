@@ -1,0 +1,49 @@
+﻿<Window x:Class="HangManGame.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HangManGame"
+        mc:Ignorable="d"
+        Title="HangMan.exe" Height="634.995" Width="963.933">
+    <Grid>
+
+        <Image Source="Images/board.jpg" Margin="10"/>
+        <Image Name="hangman" Source="Images/image_0.png" Margin="56,33,560,296"/>
+        <Button x:Name="Exit2" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="757,512,104,57" Width="95" Foreground="#FFD8D8D8" Height="35" Click="Exit2_Click">Exit</Button>
+        <Label Content="Guess the word:" HorizontalAlignment="Left" Margin="121,470,0,0" Foreground="#FFD8D8D8" VerticalAlignment="Top" FontSize="25" FontFamily="Face Your Fears" RenderTransformOrigin="-1.424,1.302" Height="41" Width="220"/>
+        <TextBox FontFamily="Face Your Fears" BorderBrush="#13100e" BorderThickness="5" FontSize="20" Name="word" HorizontalAlignment="Left" Height="35" Margin="121,516,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Background="#FF3A5640" Foreground="#FFD8D8D8"/>
+        <Button x:Name="Submit" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="23" FontFamily="Face Your Fears" Margin="346,516,522,53" Width="88" Foreground="#FFD8D8D8" Height="35">Submit</Button>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="510,55,0,0" VerticalAlignment="Top" Width="50" Height="44">B</Button>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="578,55,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="C"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="718,104,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="J" RenderTransformOrigin="1.36,0.455"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="718,55,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="E"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="438,55,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="A"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="510,104,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="G"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="578,104,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="H"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="649,104,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="I" RenderTransformOrigin="1.27,0.534"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="718,153,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="O"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="438,104,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="F" RenderTransformOrigin="2.44,0.568"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="510,153,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="L"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="578,153,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="M"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="649,153,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="N"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="718,202,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="T"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="438,153,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="K" RenderTransformOrigin="2.71,0.989"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="510,202,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="Q" RenderTransformOrigin="3.42,0.727"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="578,202,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="E"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="649,202,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="S"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="718,300,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="Z"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="438,202,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="P"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="510,251,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="V"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="578,251,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="W"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="649,251,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="X"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="649,55,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="D" RenderTransformOrigin="0.59,-0.08"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="438,251,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="U"/>
+        <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="718,251,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="Y" RenderTransformOrigin="2.95,0.886"/>
+
+
+
+
+
+    </Grid>
+</Window>
