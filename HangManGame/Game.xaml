@@ -40,6 +40,7 @@
         <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="649,55,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="D" RenderTransformOrigin="0.59,-0.08"/>
         <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="438,251,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="U"/>
         <Button BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="718,251,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="Y" RenderTransformOrigin="2.95,0.886"/>
+        <Menu IsEnabled="false" Name="menu" HorizontalAlignment="Left" Height="52" Margin="121,381,0,0" VerticalAlignment="Top" Width="731" Background="Transparent"/>
 
 
 

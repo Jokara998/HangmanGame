@@ -117,5 +117,10 @@
     <Resource Include="Images\new_game.jpg" />
     <Resource Include="Images\win.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Words\words.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

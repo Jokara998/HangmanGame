@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace HangManGame
 {
@@ -28,8 +21,12 @@ namespace HangManGame
         private void NewGame_Click(object sender, RoutedEventArgs e)
         {
             Game game = new Game();
+            game.MaxHeight = 635;
+            game.MaxWidth = 963;
+            game.MinHeight = 634;
+            game.MinWidth = 965;
             game.Show();
-            this.Close();
+            Hide();
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)

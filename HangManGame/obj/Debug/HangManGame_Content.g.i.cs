@@ -8,19 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/board.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_0.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_2.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_3.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_4.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_5.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_6.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_7.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_8.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/image_9.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/lose.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/new_game.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/win.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("words/words.txt")]
 
 

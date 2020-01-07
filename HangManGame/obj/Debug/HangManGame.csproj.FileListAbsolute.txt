@@ -14,3 +14,4 @@ C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.e
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.pdb
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\Game.g.cs
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\Game.baml
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\Words\words.txt

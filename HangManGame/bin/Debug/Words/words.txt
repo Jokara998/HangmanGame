@@ -1,0 +1,6 @@
+cat
+dog
+bitter
+apple
+juice
+customer
