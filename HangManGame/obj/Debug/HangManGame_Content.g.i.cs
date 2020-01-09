@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("words/words.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("hangman.ico")]
 
 
