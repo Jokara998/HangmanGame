@@ -158,12 +158,16 @@ namespace HangManGame
 
             if (result == MessageBoxResult.Yes)
             {
-                Close();
+                this.Close();
+                guesses = 9;
+                win = 0;
                 new Game().Show();
             }
             else
             {
                 Close();
+                guesses = 9;
+                win = 0;
                 MainWindow mw = new MainWindow();
                 mw.Show();
             }
@@ -171,7 +175,10 @@ namespace HangManGame
 
         private void FinalGuess(object sender, RoutedEventArgs e)
         {
-            string wordFinal = word.Text.ToUpper();
+            if (word.Text.Equals(""))
+                return;
+
+            string wordFinal = word.Text.Trim().ToUpper();
             if (wordFinal.Equals(wordRandom.ToUpper()))
             {
                 for (int i = 0; i < wordRandom.Length; i++)
