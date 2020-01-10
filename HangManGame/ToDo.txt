@@ -1,5 +1,3 @@
 1.resize bolji
-2.enkripcija words
-3.meni srediti
-4.uvesti levele
-5.trim kod submita,pocetak i kraj
+2.meni srediti
+3.uvesti levele

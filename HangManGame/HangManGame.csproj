@@ -127,15 +127,15 @@
     <Resource Include="Images\win.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Words\words.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="hangmanicon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="hangman.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Words\words.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
