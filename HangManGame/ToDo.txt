@@ -1,3 +1,4 @@
 1.resize bolji
 2.meni srediti
 3.uvesti levele
+
