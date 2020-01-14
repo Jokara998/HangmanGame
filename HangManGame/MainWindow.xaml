@@ -8,7 +8,9 @@
         Title="HangMan.exe" Height="450" Width="800">
     <Grid>
         <Image Source="Images/board.jpg" Margin="10"></Image>
-        <Button x:Name="NewGame" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="38" FontFamily="Face Your Fears" Margin="286,86,292,275" Width="214" Foreground="#FFD8D8D8" Height="58" Click="NewGame_Click">New Game</Button>
-        <Button x:Name="Exit" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="28" FontFamily="Face Your Fears" Margin="286,295,292,66" Width="214" Foreground="#FFD8D8D8" Height="58" Click="Exit_Click">Exit</Button>
+        <Button x:Name="WordsGame" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="30" FontFamily="Face Your Fears" Margin="277,184,248,177" Width="267" Foreground="#FFD8D8D8" Height="58" Click="Words_Click">100 Words</Button>
+        <Button x:Name="RandomWord" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="30" FontFamily="Face Your Fears" Margin="277,107,248,254" Width="267" Foreground="#FFD8D8D8" Height="58" Click="NewGame_Click">Random Word</Button>
+        <Button x:Name="Exit" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="24" FontFamily="Face Your Fears" Margin="496,312,151,49" Width="145" Foreground="#FFD8D8D8" Height="58" Click="Exit_Click">Exit</Button>
+        <Button x:Name="About" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="24" FontFamily="Face Your Fears" Margin="151,312,496,49" Width="145" Foreground="#FFD8D8D8" Height="58" Click="About_Click" Content="About"/>
     </Grid>
 </Window>

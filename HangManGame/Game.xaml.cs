@@ -33,8 +33,13 @@ namespace HangManGame
         private void Exit2_Click(object sender, RoutedEventArgs e)
         {
             Close();
-            MainWindow mw = new MainWindow();
+            MainWindow mw = (MainWindow)Application.Current.MainWindow;
+            mw.MaxHeight = 460;
+            mw.MaxWidth = 810;
+            mw.MinHeight = 440;
+            mw.MinWidth = 790;
             mw.Show();
+          
 
         }
 

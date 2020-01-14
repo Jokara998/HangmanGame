@@ -15,3 +15,5 @@ C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.p
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\Game.g.cs
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\Game.baml
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\Words\words.txt
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HundredWords.g.cs
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HundredWords.baml
