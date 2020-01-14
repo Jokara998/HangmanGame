@@ -34,12 +34,11 @@ namespace HangManGame
         {
             Close();
             MainWindow mw = (MainWindow)Application.Current.MainWindow;
-            mw.MaxHeight = 460;
-            mw.MaxWidth = 810;
-            mw.MinHeight = 440;
-            mw.MinWidth = 790;
-            mw.Show();
-          
+            mw.MaxHeight = 510;
+            mw.MaxWidth = 825;
+            mw.MinHeight = 500;
+            mw.MinWidth = 815;
+            mw.Show();       
 
         }
 

@@ -17,3 +17,7 @@ C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\Game.baml
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\Words\words.txt
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HundredWords.g.cs
 C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HundredWords.baml
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\obj\Debug\HangManGame.About.resources
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\About.resx
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\About.cs
+C:\Users\Jokara\Documents\GitHub\HangmanGame\HangManGame\bin\Debug\About.Designer.cs

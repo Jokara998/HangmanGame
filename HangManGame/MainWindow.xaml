@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HangManGame"
         mc:Ignorable="d"
-        Title="HangMan.exe" Height="450" Width="800">
+        Title="HangMan.exe" Height="508" Width="822">
     <Grid>
         <Image Source="Images/board.jpg" Margin="10"></Image>
-        <Button x:Name="WordsGame" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="30" FontFamily="Face Your Fears" Margin="277,184,248,177" Width="267" Foreground="#FFD8D8D8" Height="58" Click="Words_Click">100 Words</Button>
-        <Button x:Name="RandomWord" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="30" FontFamily="Face Your Fears" Margin="277,107,248,254" Width="267" Foreground="#FFD8D8D8" Height="58" Click="NewGame_Click">Random Word</Button>
-        <Button x:Name="Exit" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="24" FontFamily="Face Your Fears" Margin="496,312,151,49" Width="145" Foreground="#FFD8D8D8" Height="58" Click="Exit_Click">Exit</Button>
-        <Button x:Name="About" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="24" FontFamily="Face Your Fears" Margin="151,312,496,49" Width="145" Foreground="#FFD8D8D8" Height="58" Click="About_Click" Content="About"/>
+        <Button x:Name="Easy" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="288,109,259,310" Width="267" Foreground="#FFD8D8D8" Height="58" Click="Words_Click">Easy Mode</Button>
+        <Button x:Name="RandomWord" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="288,51,259,368" Width="267" Foreground="#FFD8D8D8" Height="58" Click="NewGame_Click">Random Word</Button>
+        <Button x:Name="Exit" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="24" FontFamily="Face Your Fears" Margin="555,363,114,56" Width="145" Foreground="#FFD8D8D8" Height="58" Click="Exit_Click">Exit</Button>
+        <Button x:Name="AboutButton" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="24" FontFamily="Face Your Fears" Margin="128,363,541,56" Width="145" Foreground="#FFD8D8D8" Height="58" Click="About_Click" Content="About"/>
+        <Button x:Name="Medium" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="288,167,259,252" Width="267" Foreground="#FFD8D8D8" Height="58" Click="Words_Click" Content="Medium Mode"/>
+        <Button x:Name="Hard" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="288,230,259,189" Width="267" Foreground="#FFD8D8D8" Height="58" Click="Words_Click" Content="Hard Mode"/>
+        <Button x:Name="Extreme" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="288,293,259,126" Width="267" Foreground="#FFD8D8D8" Height="58" Click="Words_Click" Content="Extreme Mode"/>
     </Grid>
 </Window>

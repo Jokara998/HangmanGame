@@ -24,10 +24,12 @@ namespace HangManGame
         public int finalWin = 0;
         public Boolean begin = true;
         public int countWords = 0;
+        public int mode;
 
-        public HundredWords()
+        public HundredWords(int modeNumber)
         {
             InitializeComponent();
+            mode = modeNumber;
             Random100Words();
             RandomWord();
             AddButtons();
@@ -40,10 +42,10 @@ namespace HangManGame
         {
             Close();
             MainWindow mw = (MainWindow)Application.Current.MainWindow;
-            mw.MaxHeight = 460;
-            mw.MaxWidth = 810;
-            mw.MinHeight = 440;
-            mw.MinWidth = 790;
+            mw.MaxHeight = 510;
+            mw.MaxWidth = 825;
+            mw.MinHeight = 500;
+            mw.MinWidth = 815;
             mw.Show();
 
 
@@ -64,6 +66,7 @@ namespace HangManGame
             }
             
             words100.Remove(wordRandom);
+            Console.WriteLine(wordRandom);
        
         }
 
@@ -84,7 +87,7 @@ namespace HangManGame
             Console.ReadLine();
 
             HashSet<int> numbers = new HashSet<int>();
-            while (numbers.Count != 100)
+            while (numbers.Count != mode)
             {
                 numbers.Add(random.Next(0, words.Count));
               
@@ -219,13 +222,32 @@ namespace HangManGame
 
             if (result == MessageBoxResult.Yes)
             {
-                if(!body.Equals("You Won 100 Words Mode! Congratz!"))
+                if(body.Equals("You Won!Continue Next Level?"))
                     UpdateGame();
+                else if (body.Equals("You Lost!New Game?"))
+                {
+                    this.Close();
+                    guesses = 9;
+                    win = 0;
+                    finalWin = 0;
+                    begin = true;
+                    countWords = 0;
+                    HundredWords game = new HundredWords(mode);
+                    game.MaxHeight = 635;
+                    game.MaxWidth = 963;
+                    game.MinHeight = 634;
+                    game.MinWidth = 965;
+                    game.Show();
+
+                }
                 else
                 {
                     Close();
                     guesses = 9;
                     win = 0;
+                    finalWin = 0;
+                    begin = true;
+                    countWords = 0;
                     MainWindow mw = new MainWindow();
                     mw.Show();
                 }
@@ -236,6 +258,9 @@ namespace HangManGame
                 Close();
                 guesses = 9;
                 win = 0;
+                finalWin = 0;
+                begin = true;
+                countWords = 0;
                 MainWindow mw = new MainWindow();
                 mw.Show();
             }
