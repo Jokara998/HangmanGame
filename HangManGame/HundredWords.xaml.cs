@@ -268,10 +268,28 @@ namespace HangManGame
 
         private void FinalGuessHundred(object sender, RoutedEventArgs e)
         {
-            if (word.Text.Equals(""))
-                return;
+            string check = "";
+            List<char> chars = new List<char>();
+            Console.WriteLine(check);
+            for(int i=0;i<word.Text.Length;i++)
+            {
+                if (!word.Text[i].Equals(' '))
+                    chars.Add(word.Text[i]);
+            }
 
-            string wordFinal = word.Text.Trim().ToUpper();
+            for (int i = 0; i < chars.Count; i++)
+            {
+                check += chars[i];
+            }
+
+            if (check.Equals(""))
+            {
+                word.Text = "";
+                return;
+            }
+               
+
+            string wordFinal = check.Trim().ToUpper();
             if (wordFinal.Equals(wordRandom.ToUpper()))
             {
                 for (int i = 0; i < wordRandom.Length; i++)
@@ -333,6 +351,89 @@ namespace HangManGame
             menu.ItemsSource = buttons;
             begin = false;
             UpdateHangMan();
+            UpdateButtons();
+        }
+        private void UpdateButtons()
+        {
+            A.Visibility = Visibility.Visible;
+            A.IsEnabled = true;
+
+            B.Visibility = Visibility.Visible;
+            B.IsEnabled = true;
+
+            C.Visibility = Visibility.Visible;
+            C.IsEnabled = true;
+
+            D.Visibility = Visibility.Visible;
+            D.IsEnabled = true;
+
+            E.Visibility = Visibility.Visible;
+            E.IsEnabled = true;
+
+            F.Visibility = Visibility.Visible;
+            F.IsEnabled = true;
+
+            G.Visibility = Visibility.Visible;
+            G.IsEnabled = true;
+
+            H.Visibility = Visibility.Visible;
+            H.IsEnabled = true;
+
+            I.Visibility = Visibility.Visible;
+            I.IsEnabled = true;
+
+            J.Visibility = Visibility.Visible;
+            J.IsEnabled = true;
+
+            K.Visibility = Visibility.Visible;
+            K.IsEnabled = true;
+
+            L.Visibility = Visibility.Visible;
+            L.IsEnabled = true;
+
+            M.Visibility = Visibility.Visible;
+            M.IsEnabled = true;
+
+            N.Visibility = Visibility.Visible;
+            N.IsEnabled = true;
+
+            O.Visibility = Visibility.Visible;
+            O.IsEnabled = true;
+
+            P.Visibility = Visibility.Visible;
+            P.IsEnabled = true;
+
+            Q.Visibility = Visibility.Visible;
+            Q.IsEnabled = true;
+
+            R.Visibility = Visibility.Visible;
+            R.IsEnabled = true;
+
+            S.Visibility = Visibility.Visible;
+            S.IsEnabled = true;
+
+            T.Visibility = Visibility.Visible;
+            T.IsEnabled = true;
+
+            U.Visibility = Visibility.Visible;
+            U.IsEnabled = true;
+
+            V.Visibility = Visibility.Visible;
+            V.IsEnabled = true;
+
+            W.Visibility = Visibility.Visible;
+            W.IsEnabled = true;
+
+            X.Visibility = Visibility.Visible;
+            X.IsEnabled = true;
+
+            Y.Visibility = Visibility.Visible;
+            Y.IsEnabled = true;
+
+            Z.Visibility = Visibility.Visible;
+            Z.IsEnabled = true;
+
+
         }
     }
 }

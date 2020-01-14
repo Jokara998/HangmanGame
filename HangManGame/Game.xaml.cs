@@ -187,10 +187,28 @@ namespace HangManGame
 
         private void FinalGuess(object sender, RoutedEventArgs e)
         {
-            if (word.Text.Equals(""))
-                return;
+            string check = "";
+            List<char> chars = new List<char>();
+            Console.WriteLine(check);
+            for (int i = 0; i < word.Text.Length; i++)
+            {
+                if (!word.Text[i].Equals(' '))
+                    chars.Add(word.Text[i]);
+            }
 
-            string wordFinal = word.Text.Trim().ToUpper();
+            for (int i = 0; i < chars.Count; i++)
+            {
+                check += chars[i];
+            }
+
+            if (check.Equals(""))
+            {
+                word.Text = "";
+                return;
+            }
+
+            string wordFinal = check.Trim().ToUpper();
+
             if (wordFinal.Equals(wordRandom.ToUpper()))
             {
                 for (int i = 0; i < wordRandom.Length; i++)
