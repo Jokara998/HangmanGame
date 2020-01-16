@@ -15,7 +15,8 @@ namespace HangManGame
 
     public partial class HundredWords : Window
     {
-        public List<string> words;
+
+        public List<string> words = ((MainWindow)Application.Current.MainWindow).words;
         public List<string> words100;
         public string wordRandom;
         List<Button> buttons;
@@ -76,31 +77,42 @@ namespace HangManGame
                 return;
 
             Random random = new Random();
-            List<string> words64 = File.ReadAllLines(@"Words/words.txt").ToList();
-            words = new List<string>();
-
-            foreach (string w in words64)
-            {
-                words.Add(Base64Decode(w));
-            }
-
-            Console.ReadLine();
-
             HashSet<int> numbers = new HashSet<int>();
-            while (numbers.Count != mode)
+
+            while (numbers.Count != 800)
             {
                 numbers.Add(random.Next(0, words.Count));
               
             }
 
             words100 = new List<string>();
-            foreach(int ix in numbers)
+            foreach (int ix in numbers)
             {
-                words100.Add(words[ix]);
-                ++countWords;
+                if (countWords == mode)
+                    break;
+                
+                if (mode == 5  && words[ix].Length <= 5)
+                {
+                    ++countWords;
+                    words100.Add(words[ix]);
+                }
+                else if (mode == 15 && words[ix].Length <= 6)
+                {
+                    ++countWords;
+                    words100.Add(words[ix]);
+                }
+                else if (mode == 30  && words[ix].Length <= 8)
+                {
+                    ++countWords;
+                    words100.Add(words[ix]);
+                }
+                else if (mode == 50 && words[ix].Length <= 12)
+                {
+                    ++countWords;
+                    words100.Add(words[ix]);
+                }
+
             }
-           
-           
 
         }
 
@@ -327,18 +339,6 @@ namespace HangManGame
                     word.Text = "";
                 }
             }
-        }
-
-        public static string Base64Encode(string plainText)
-        {
-            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
-            return System.Convert.ToBase64String(plainTextBytes);
-        }
-
-        public static string Base64Decode(string base64EncodedData)
-        {
-            var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
-            return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
         }
 
         private void UpdateGame()
