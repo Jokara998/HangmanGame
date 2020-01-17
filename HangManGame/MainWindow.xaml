@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HangManGame"
         mc:Ignorable="d"
         Title="HangMan.exe" Height="508" Width="822">
-    <Grid>
+    <Grid Height="auto" Width="auto">
         <Image Source="Images/board.jpg" Margin="10"></Image>
         <Button x:Name="Easy" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="288,109,259,310" Width="267" Foreground="#FFD8D8D8" Height="58" Click="Words_Click">Easy Mode</Button>
         <Button x:Name="RandomWord" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="288,51,259,368" Width="267" Foreground="#FFD8D8D8" Height="58" Click="NewGame_Click">Random Word</Button>

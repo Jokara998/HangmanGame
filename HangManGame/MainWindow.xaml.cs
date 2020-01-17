@@ -31,8 +31,8 @@ namespace HangManGame
 
             InitializeComponent();
             MainWindow mw = (MainWindow)Application.Current.MainWindow;
-            mw.MaxHeight = 510;
-            mw.MaxWidth = 825;
+            //mw.MaxHeight = 510;
+            //mw.MaxWidth = 825;
             mw.MinHeight = 500;
             mw.MinWidth = 815;
 
@@ -53,8 +53,8 @@ namespace HangManGame
         {
             
             Game game = new Game();
-            game.MaxHeight = 635;
-            game.MaxWidth = 963;
+            //game.MaxHeight = 635;
+            //game.MaxWidth = 963;
             game.MinHeight = 634;
             game.MinWidth = 965;
             game.Show();
@@ -94,8 +94,8 @@ namespace HangManGame
             }
 
             HundredWords game = new HundredWords(modeNumber);
-            game.MaxHeight = 635;
-            game.MaxWidth = 963;
+            //game.MaxHeight = 635;
+            //game.MaxWidth = 963;
             game.MinHeight = 634;
             game.MinWidth = 965;
 

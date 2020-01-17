@@ -35,8 +35,8 @@ namespace HangManGame
         {
             Close();
             MainWindow mw = (MainWindow)Application.Current.MainWindow;
-            mw.MaxHeight = 510;
-            mw.MaxWidth = 825;
+            //mw.MaxHeight = 510;
+            //mw.MaxWidth = 825;
             mw.MinHeight = 500;
             mw.MinWidth = 815;
             mw.Show();       
@@ -230,6 +230,12 @@ namespace HangManGame
             }
         }
 
-        
+        private void word_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+                FinalGuess(this, new RoutedEventArgs());
+            }
+        }
     }
 }

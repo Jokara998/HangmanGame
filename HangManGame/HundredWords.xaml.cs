@@ -43,8 +43,8 @@ namespace HangManGame
         {
             Close();
             MainWindow mw = (MainWindow)Application.Current.MainWindow;
-            mw.MaxHeight = 510;
-            mw.MaxWidth = 825;
+            //mw.MaxHeight = 510;
+            //mw.MaxWidth = 825;
             mw.MinHeight = 500;
             mw.MinWidth = 815;
             mw.Show();
@@ -91,22 +91,22 @@ namespace HangManGame
                 if (countWords == mode)
                     break;
                 
-                if (mode == 5  && words[ix].Length <= 5)
+                if (mode == 5 && words[ix].Length <= 11)
                 {
                     ++countWords;
                     words100.Add(words[ix]);
                 }
-                else if (mode == 15 && words[ix].Length <= 6)
+                else if (mode == 15 && words[ix].Length <= 11)
                 {
                     ++countWords;
                     words100.Add(words[ix]);
                 }
-                else if (mode == 30  && words[ix].Length <= 8)
+                else if (mode == 30 && words[ix].Length <= 11)
                 {
                     ++countWords;
                     words100.Add(words[ix]);
                 }
-                else if (mode == 50 && words[ix].Length <= 12)
+                else if (mode == 50 && words[ix].Length <= 11)
                 {
                     ++countWords;
                     words100.Add(words[ix]);
@@ -434,6 +434,14 @@ namespace HangManGame
             Z.IsEnabled = true;
 
 
+        }
+
+        private void word_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+                FinalGuessHundred(this, new RoutedEventArgs());
+            }
         }
     }
 }

@@ -6,13 +6,13 @@
         xmlns:local="clr-namespace:HangManGame"
         mc:Ignorable="d"
         Title="HangMan.exe" Height="634.995" Width="963.933">
-    <Grid>
+    <Grid Width="960" Height="605">
 
         <Image Source="Images/board.jpg" Margin="10"/>
         <Image Name="hangmanHundred" Source="Images/image_0.png" Margin="56,104,587,260"/>
         <Button x:Name="Exit2" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" Margin="757,512,104,57" Width="95" Foreground="#FFD8D8D8" Height="35" Click="Exit2_Click">Exit</Button>
         <Label Content="Guess the word:" HorizontalAlignment="Left" Margin="121,470,0,0" Foreground="#FFD8D8D8" VerticalAlignment="Top" FontSize="25" FontFamily="Face Your Fears" RenderTransformOrigin="-1.424,1.302" Height="41" Width="220"/>
-        <TextBox FontFamily="Face Your Fears" BorderBrush="#13100e" BorderThickness="5" FontSize="20" Name="word" HorizontalAlignment="Left" Height="35" Margin="121,516,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Background="#FF3A5640" Foreground="#FFD8D8D8"/>
+        <TextBox FontFamily="Face Your Fears" BorderBrush="#13100e" BorderThickness="5" FontSize="20" Name="word" HorizontalAlignment="Left" Height="35" Margin="121,516,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Background="#FF3A5640" Foreground="#FFD8D8D8" KeyDown="word_KeyDown"/>
         <Button Click="FinalGuessHundred"  x:Name="Submit" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="23" FontFamily="Face Your Fears" Margin="346,516,522,53" Width="88" Foreground="#FFD8D8D8" Height="35">Submit</Button>
         <Button Name ="B" BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="510,55,0,0" VerticalAlignment="Top" Width="50" Height="44" Click="WordGuessHundred">B</Button>
         <Button Name = "C" BorderBrush="#FFD8D8D8" BorderThickness="3" Foreground="#FFD8D8D8"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontSize="27" FontFamily="Face Your Fears" HorizontalAlignment="Left" Margin="578,55,0,0" VerticalAlignment="Top" Width="50" Height="44" Content="C" Click="WordGuessHundred"/>

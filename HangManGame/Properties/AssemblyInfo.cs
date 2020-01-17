@@ -8,7 +8,7 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("HangManGame")]
-[assembly: AssemblyDescription("HangManGame is game about guessing words.Player has 9 chances to guess the word.If he guesses the word he wins the game.If he doesn't guess the word he gets hanged and then the game is over.There are 5 modes in this game:Random Word, Easy, Medium, Hard and Extreme Mode.Random Word : goal is to guess a word.Easy Mode : goal is to guess  5 words in a row.Medium Mode : goal is to guess 20 words in a row.Hard Mode : goal is to guess 40 words in a row.Extreme Mode : goal is to guess 80 words in a row.")]
+[assembly: AssemblyDescription("HangManGame is game about guessing words.Player has 9 chances to guess the word.If he guesses the word he wins the game.If he doesn't guess the word he gets hanged and then the game is over.There are 5 modes in this game:Random Word, Easy, Medium, Hard and Extreme Mode.Random Word : goal is to guess a word.Easy Mode : goal is to guess  5 words in a row.Medium Mode : goal is to guess 15 words in a row.Hard Mode : goal is to guess 30 words in a row.Extreme Mode : goal is to guess 50 words in a row.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Company: JokaraGames")]
 [assembly: AssemblyProduct("Product: HangManGame")]
